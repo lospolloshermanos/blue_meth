@@ -13,8 +13,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'redcarpet', '2.3.0'
 
-gem 'sqlite3'
-
 gem 'haml-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -44,4 +42,6 @@ gem 'byebug',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails_12factor', group: :production
 
