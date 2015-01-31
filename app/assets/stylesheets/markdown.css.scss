@@ -1,5 +1,6 @@
 #main{
   padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 #markdown-input{
@@ -9,5 +10,6 @@
 #markdown-preview{
   border: 1px rgb(204, 204, 204) solid;
   height: 400px;
+  word-wrap: break-word;
 }
 
