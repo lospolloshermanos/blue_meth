@@ -3,9 +3,11 @@ $ ->
     markdown_value = $('#markdown-input').val()
     that = $(this)
 
-    $.get # $.ajax( method: 'get')
-      data: {  markdown: markdown_value }
-      contentType: "application/json"
+    $.ajax 
       url: that.attr("action")
+      data: {  markdown: markdown_value }
+      contentType: 'application/json'
+      success:  (markdown_data) ->
+        $('.markdown-preview').html markdown_data.markdown
 
     false
