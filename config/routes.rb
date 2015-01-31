@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root to: 'markdown_parser#index'
+  get 'parser' => 'markdown_parser#parser', as: :parser
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
