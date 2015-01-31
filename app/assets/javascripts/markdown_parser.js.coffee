@@ -8,6 +8,6 @@ $ ->
       data: {  markdown: markdown_value }
       contentType: 'application/json'
       success:  (markdown_data) ->
-        $('.markdown-preview').html markdown_data.markdown
+        $('#markdown-preview').html markdown_data.markdown
 
     false
